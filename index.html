@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--
+WELCOME TO AGRISENSE ZIMBABWE (DEMO VERSION)
+
+This file is a COMPLETE WEBSITE in one file.
+You can:
+1) Open it directly in a browser (double-click)
+2) Upload it to basic hosting (GitHub Pages / Netlify)
+3) Edit text safely without breaking anything
+
+STRUCTURE GUIDE:
+- <header>    : Top banner / identity statement
+- <nav>       : Menu (anchors scroll to sections)
+- <section>   : Each major content area
+- <style>     : All colours, fonts, layout (top of file)
+
+You can edit TEXT freely.
+Avoid changing brackets < > unless guided.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriSense Zimbabwe | AI as Agricultural Infrastructure for Food Security</title>
+  <meta name="description" content="AgriSense Zimbabwe is a public‑interest, AI‑enabled agricultural intelligence platform focused on food security, climate resilience, and data‑driven decision support." />
+  <style>
+    :root {
+      --green: #1f3d2b;
+      --earth: #6b705c;
+      --charcoal: #2b2b2b;
+      --light: #f7f7f5;
+      --muted: #e5e7e3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--charcoal);
+      background: var(--light);
+      line-height: 1.65;
+    }
+
+    header {
+      background: var(--green);
+      color: white;
+      padding: 3.5rem 2rem 3rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      max-width: 900px;
+      margin: 0 auto 1rem;
+    }
+
+    header p {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: #173021;
+      padding: 0.75rem 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      max-width: 1000px;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #e8efe9;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    section {
+      padding: 4rem 2rem;
+      border-bottom: 1px solid var(--muted);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: var(--green);
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      color: var(--earth);
+    }
+
+    p { max-width: 850px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.75rem;
+      border-radius: 4px;
+      border: 1px solid var(--muted);
+    }
+
+    footer {
+      background: #1c1c1c;
+      color: #d7d7d7;
+      padding: 2.5rem 2rem;
+      font-size: 0.85rem;
+    }
+
+    footer p {
+      max-width: 1000px;
+      margin: 0 auto 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AI as Agricultural Infrastructure for Food Security</h1>
+    <p>
+      AgriSense Zimbabwe is a public‑interest, AI‑enabled agricultural intelligence platform
+      designed to strengthen food security, climate resilience, and evidence‑based decision‑making
+      across Zimbabwe’s agricultural systems.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#governance">Governance & Ethics</a></li>
+      <li><a href="#pilots">Pilot Focus</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#status">Status & Partnerships</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECTION: ABOUT AGRISENSE (Problem, Mission, Context) -->
+  <section id="about">
+    <div class="container">
+      <h2>About AgriSense Zimbabwe</h2>
+      <p>
+        Agriculture in Zimbabwe is constrained not only by climate variability and resource limitations,
+        but by persistent information gaps and coordination failures across the value chain.
+        Decisions on planting, input use, and risk management are often made with limited, delayed,
+        or fragmented data.
+      </p>
+      <p>
+        AgriSense Zimbabwe addresses this challenge by treating agricultural intelligence as
+        shared public infrastructure. Rather than automating farming decisions, the platform
+        provides timely, explainable decision support that strengthens human judgement at farm,
+        institutional, and policy levels.
+      </p>
+      <p>
+        The initiative is grounded in Zimbabwe’s smallholder‑dominated agricultural context and
+        designed with regional scalability in mind, aligning with broader African food security
+        and climate adaptation priorities.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION: HOW IT WORKS (Data Flow & Decision Support) -->
+  <!-- SECTION: HOW IT WORKS (Data Flow & Decision Support) -->
+  <section id="how">
+    <div class="container">
+      <h2>How the Platform Works</h2>
+      <p>
+        AgriSense Zimbabwe operates as a decision-support system that transforms dispersed
+        environmental and agricultural data into practical, timely intelligence. The platform
+        is designed for simplicity, low bandwidth conditions, and interpretability at every stage.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Environmental & Satellite Inputs</h3>
+          <p>
+            Satellite imagery, rainfall estimates, and climate forecasts are used to observe
+            crop conditions, weather patterns, and environmental stress factors across
+            agricultural regions.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Analytical Processing</h3>
+          <p>
+            Analytical models identify patterns and risks related to planting windows,
+            moisture availability, and crop development. Outputs are designed to be
+            explainable rather than opaque predictions.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Farmer-Level Advisories</h3>
+          <p>
+            Context-appropriate advisories are delivered through basic communication
+            channels such as SMS and WhatsApp, ensuring accessibility without requiring
+            smartphones or internet access.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Aggregated Institutional Insights</h3>
+          <p>
+            At a higher level, anonymised and aggregated insights support early warning,
+            planning, and coordination for institutions, researchers, and policymakers.
+          </p>
+        </div>
+      </div>
+      <p>
+        Throughout the process, AgriSense Zimbabwe prioritises transparency, data minimisation,
+        and alignment with existing agricultural knowledge systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION: GOVERNANCE & ETHICS (Trust, Safeguards) -->
+  <!-- SECTION: GOVERNANCE & ETHICS (Trust, Safeguards) -->
+  <section id="governance">
+    <div class="container">
+      <h2>Governance & Ethical Framework</h2>
+      <p>
+        AgriSense Zimbabwe is established as a public-interest digital infrastructure initiative.
+        Its governance framework is designed to ensure trust, accountability, and responsible
+        stewardship of agricultural data and artificial intelligence systems.
+      </p>
+      <p>
+        The platform recognises farmers as the primary custodians of their data. Participation
+        is voluntary and based on informed, opt-in consent. Data generated through the platform
+        is used strictly for decision support and learning purposes, not for commercial
+        exploitation or individual profiling.
+      </p>
+      <ul>
+        <li>Farmers retain ownership and control of their data at all times</li>
+        <li>Participation is voluntary, transparent, and opt-in</li>
+        <li>Only aggregated, non-identifiable insights are shared beyond the farm level</li>
+        <li>AI models are designed to be explainable, auditable, and context-aware</li>
+      </ul>
+      <p>
+        AgriSense Zimbabwe is intended to complement and strengthen existing agricultural
+        extension systems, research institutions, and policy processes. It does not replace
+        human decision-making, but supports it with timely, interpretable evidence.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION: PILOT FOCUS (Evidence-first deployment) -->
+  <section id="pilots">
+    <div class="container">
+      <h2>Pilot Focus</h2>
+      <p>
+        AgriSense Zimbabwe is structured as a pilot‑first initiative, prioritising evidence,
+        learning, and adaptation before broader scaling.
+      </p>
+      <p><strong>Initial focus crops:</strong> maize, soya beans, and groundnuts.</p>
+      <p>
+        Pilot implementations are planned at provincial level, enabling contextual validation
+        across different agro‑ecological zones and farming systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION: LEADERSHIP (Accountability & Stewardship) -->
+  <section id="leadership">
+    <div class="container">
+      <h2>Founder & Leadership</h2>
+      <p><strong>Ngoni Mupfurutsa</strong><br />Founder & Lead Architect</p>
+      <p>
+        AgriSense Zimbabwe was founded with a systems‑thinking approach to public‑interest
+        technology, combining perspectives from agriculture, data systems, ethics, and
+        long‑term institutional design.
+      </p>
+      <p>
+        The leadership philosophy emphasises stewardship, resilience, and alignment with
+        national and regional development goals.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION: STATUS & PARTNERSHIPS (Engagement posture) -->
+  <section id="status">
+    <div class="container">
+      <h2>Status & Partnerships</h2>
+      <p>
+        The initiative is currently preparing for pilot implementation and funding partnerships.
+        AgriSense Zimbabwe is open to collaboration with development agencies, research
+        institutions, NGOs, and government stakeholders.
+      </p>
+      <p>
+        Engagements are focused on co‑design, evidence generation, and long‑term sustainability
+        rather than rapid commercial deployment.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© AgriSense Zimbabwe. Public‑interest agricultural intelligence initiative.</p>
+    <p>Designed as institutional digital infrastructure for food security and climate resilience.</p>
+  </footer>
+
+</body>
+</html>
